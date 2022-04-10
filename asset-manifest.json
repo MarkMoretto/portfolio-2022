@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio-2022/static/css/main.5b117c56.css",
-    "main.js": "/portfolio-2022/static/js/main.9777402f.js",
+    "main.css": "/portfolio-2022/static/css/main.3d6b1ccf.css",
+    "main.js": "/portfolio-2022/static/js/main.ead08ece.js",
     "static/media/pexels-olya-kobruseva-sm.jpg": "/portfolio-2022/static/media/pexels-olya-kobruseva-sm.b09ae2c9552479610120.jpg",
     "static/media/boat-water-winter-drazen-nesic.jpeg": "/portfolio-2022/static/media/boat-water-winter-drazen-nesic.822137f3366f74fe249d.jpeg",
     "index.html": "/portfolio-2022/index.html",
-    "main.5b117c56.css.map": "/portfolio-2022/static/css/main.5b117c56.css.map",
-    "main.9777402f.js.map": "/portfolio-2022/static/js/main.9777402f.js.map"
+    "main.3d6b1ccf.css.map": "/portfolio-2022/static/css/main.3d6b1ccf.css.map",
+    "main.ead08ece.js.map": "/portfolio-2022/static/js/main.ead08ece.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b117c56.css",
-    "static/js/main.9777402f.js"
+    "static/css/main.3d6b1ccf.css",
+    "static/js/main.ead08ece.js"
   ]
 }
