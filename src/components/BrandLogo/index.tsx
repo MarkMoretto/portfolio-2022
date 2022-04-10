@@ -63,17 +63,19 @@ const BrandLogo = ({ logoWidth = 300, logoHeight = 300, scaleRatio = 0.4, transl
                     />
                 </defs>
 
-				// Leveraging LogoBackground component from above.
+				{/* Leveraging LogoBackground component from above. */}
                 <SquareBackground
 					bgId="logo-container"
 					bgColor="#ffcf41"
 				/> 
 				
-				// Here we called our polyline definition, which is only half of the M,
-				// then `flipped` that half vertically using translate and scale to
-				// achieve the full M portion of the logo.
-				// Note: The x-value in translate is double the maximum x-value from the
-				// points collection in our polyline object.
+				{/* 
+				Here we called our polyline definition, which is only half of the M,
+				then `flipped` that half vertically using translate and scale to
+				achieve the full M portion of the logo.
+				Note: The x-value in translate is double the maximum x-value from the
+				points collection in our polyline object.
+				*/}
                 <use xlinkHref="#logo-lhs" />
                 <use xlinkHref="#logo-lhs" transform="translate(310,0) scale(-1, 1)" />
             </g>

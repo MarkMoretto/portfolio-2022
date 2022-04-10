@@ -7,19 +7,25 @@ import Layout from "../Layout"
 import Home from "../Home"
 import About from "../About"
 import Pages from "../Pages"
+import ActivePage from "../../pages/ActivePage"
 import PageNotFound from "../../pages/PageNotFound"
 
 const App = () => {
 	return (
 		<Fragment>
-			<Route path="/" element={<Layout />}>
-				<Routes>
+			<Routes>
+				<Route path="/" element={<Layout />}>
+
 					<Route path="/" element={<Home />} />
-					<Route path="/pages" element={<Pages />} />
+
+					<Route path="/pages" element={<Pages />}>
+						<Route path=":pageSlug" element={<ActivePage />} />
+					</Route>
+
 					<Route path="/about" element={<About />} />
 					<Route path="" element={<PageNotFound />} />
-				</Routes>
-			</Route>
+				</Route>
+			</Routes>
 		</Fragment>
 	)
 }

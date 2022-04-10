@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import styles from "./About.module.css"
+// import React from "react"
+// import { Link } from "react-router-dom"
+// import styles from "./About.module.css"
 import aboutImage from "./boat-water-winter-drazen-nesic.jpeg"
 
 const About = () => {

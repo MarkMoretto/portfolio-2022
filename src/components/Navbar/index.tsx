@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 import BrandLogo from "../BrandLogo"
 import navbarLinks from "./nav-links"
 
-import "./Navbar.module.css"
+import styles from "./Navbar.module.css"
 
 const Navbar = () => {
 
@@ -13,7 +13,7 @@ const Navbar = () => {
 	let activeClassName = "activeLink"
 
     return (
-        <nav className="navBar">
+        <nav className={styles.navBar}>
 			<BrandLogo />
 			<ul>
 				{navbarLinks.map(item => {

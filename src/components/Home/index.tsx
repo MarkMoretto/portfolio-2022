@@ -1,6 +1,6 @@
 
-import logo from "../../logo.svg"
-import styles from "./Home.module.css"
+// import logo from "../../logo.svg"
+// import styles from "./Home.module.css"
 import homeImage from "./pexels-olya-kobruseva-sm.jpg"
 
 const Home = () => {

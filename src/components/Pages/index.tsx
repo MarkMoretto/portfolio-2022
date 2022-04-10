@@ -1,8 +1,11 @@
-import { useLocation, NavLink } from "react-router-dom"
+// import { useState, useEffect } from "react"
+import { useLocation, NavLink, Outlet } from "react-router-dom"
+import { getPages } from "../../classes/about"
 
-import { getPages } from "./page-data"
+// import styles from "./Pages.module.css"
 
 interface QueryNavLinkProps {
+	children: string
 	to: string
 }
 
@@ -12,12 +15,26 @@ const QueryNavLink = ({to, ...props}: QueryNavLinkProps) => {
 }
 
 const Pages = () => {
+	// const [isActive, setIsActive ] = useState(false)
 	let pages = getPages()
+	// useEffect(() => {
+	// 	setIsActive(prevState => !prevState)
+	// }, [isActive])
+	
 	return (
 		<div>
-			<nav>
-
-			</nav>
+			<div className="container">
+				{pages.map(pg => (
+					<QueryNavLink
+						key={pg.pageId}
+						to={`/pages/${pg.pageSlug}`}
+					>
+						{pg.title ? pg.title : ""}
+					</QueryNavLink>					
+				))
+				}
+			</div>
+			<Outlet />
 		</div>
 	)
 }
