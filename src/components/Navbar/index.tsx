@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom"
 
 import BrandLogo from "../BrandLogo"
-import navbarLinks from "./nav-links"
+import links from "./nav-links"
 
 import styles from "./Navbar.module.css"
 
@@ -16,11 +16,11 @@ const Navbar = () => {
         <nav className={styles.navBar}>
 			<BrandLogo />
 			<ul>
-				{navbarLinks.map(item => {
+				{links.map(link => {
 					return (
-					<li key={item.id}>
-						<NavLink to={item.path} className={({ isActive }) => isActive ? activeClassName : undefined }>
-							{item.text}
+					<li key={link.id}>
+						<NavLink to={link.path} className={({ isActive }) => isActive ? activeClassName : undefined }>
+							{link.text}
 						</NavLink>
 					</li>
 					)
