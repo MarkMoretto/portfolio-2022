@@ -1,42 +1,26 @@
-import React from "react"
-// https://reactrouter.com/docs/en/v6/upgrading/v5#upgrade-all-switch-elements-to-routes
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom"
+import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 
-import Navbar from "./components/Navbar"
-import Home from "./components/Home"
-import About from "./components/About"
-
 function App() {
-	return (
-		<React.Fragment>
-			<Navbar />
-			<div>
-				<div>
-					<nav>
-						<ul>
-							<li>
-								<Link to="/">Home</Link>
-							</li>
-							<li>
-								<Link to="/about">About</Link>
-							</li>					
-						</ul>
-					</nav>
-				</div>
-
-				<Switch>
-					<Route exact path="/">
-						<Home />
-					</Route>
-					<Route path="/about">
-						<About />
-					</Route>
-				</Switch>
-
-			</div>
-		</React.Fragment>
-	);
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;
