@@ -12,12 +12,15 @@ const ActivePage = () => {
 	// const { url, path } = useMatch()
 	return (
 		<Fragment>
-			<main>
-				<h2>{currentPage?.title}</h2>
+				{currentPage ? 
+				<main>
+				<h2>{currentPage.title}</h2>
 				<p>
-					{currentPage?.description}
+					{currentPage.description}
 				</p>
-			</main>
+				</main>
+				: 
+				<p>Page not found.</p>}
 		</Fragment>
 	)
 }

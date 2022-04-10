@@ -8,8 +8,8 @@ import { Page } from "./page"
 export class AboutPage extends Page {
 	description: string
 
-	constructor(pageSlug: string, pageId: number, title: string, description: string) {
-		super(pageSlug, pageId, title)
+	constructor(pageId: number, pageSlug: string, title: string, description: string) {
+		super(pageId, pageSlug, title)
 		this.description = description
 	}
 
@@ -106,18 +106,20 @@ export class AboutPage extends Page {
 // )
 
 let pages = new Array<AboutPage>()
-pages.push(
-    new AboutPage(
-        "project",
-		0,
-        "About the Project",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	)		
-)
+
 pages.push(
 	new AboutPage(
-		"author",
+		0,
+		"project",
+		"About the Project",
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	)		
+)
+
+pages.push(
+	new AboutPage(
 		1,
+		"author",
 		"About the Author",
 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 	)		
@@ -137,10 +139,13 @@ export const getPages = (): Array<AboutPage> => {
  * @param {id} number
  * @returns {AboutPage}
 */
-export const findPageById = (id: number) => {
+export const findPageById = (id: number): AboutPage | undefined => {
 	let tmpId = Number(id)
 	if (Number.isFinite(tmpId)) {
-		return pages.find(pg => pg.pageId = tmpId)
+		let result = pages.find(pg => pg.pageId = tmpId)
+		if (result) {
+			return result
+		}
 	}
 }
 

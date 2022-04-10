@@ -1,4 +1,4 @@
-// import { useState, useEffect } from "react"
+import { Fragment } from "react"
 import { useLocation, NavLink, Outlet } from "react-router-dom"
 import { getPages } from "../../classes/about"
 
@@ -15,27 +15,20 @@ const QueryNavLink = ({to, ...props}: QueryNavLinkProps) => {
 }
 
 const Pages = () => {
-	// const [isActive, setIsActive ] = useState(false)
 	let pages = getPages()
-	// useEffect(() => {
-	// 	setIsActive(prevState => !prevState)
-	// }, [isActive])
-	
+
 	return (
-		<div>
-			<div className="container">
+		<Fragment>
+			<nav>
 				{pages.map(pg => (
-					<QueryNavLink
-						key={pg.pageId}
-						to={`/pages/${pg.pageSlug}`}
-					>
+					<QueryNavLink key={pg.pageId} to={`/pages/${pg.pageSlug}`}>
 						{pg.title ? pg.title : ""}
 					</QueryNavLink>					
 				))
 				}
-			</div>
+			</nav>
 			<Outlet />
-		</div>
+		</Fragment>
 	)
 }
 

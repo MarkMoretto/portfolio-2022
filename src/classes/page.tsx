@@ -5,13 +5,13 @@
 */
 export abstract class Page {
 
-	pageSlug: string
 	pageId: number
+	pageSlug: string
 	title?: string
 
-	constructor(pageSlug: string, pageId: number, title?: string) {
-		this.pageSlug = pageSlug
+	constructor(pageId: number, pageSlug: string, title?: string) {
 		this.pageId = pageId
+		this.pageSlug = pageSlug
 		this.title = title
 	}
 
