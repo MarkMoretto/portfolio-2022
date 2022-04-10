@@ -1,6 +1,6 @@
 {
     "name": "gh-pages-project",
-    "homepage": "https://markmoretto.com/portfolio-2022/",
+    "homepage": "https://markmoretto.github.io/portfolio-2022/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
