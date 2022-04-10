@@ -1,23 +1,31 @@
 
 import { NavLink } from "react-router-dom"
+
+import BrandLogo from "../BrandLogo"
 import navbarLinks from "./nav-links"
 
-import "./styles.css"
+import "./Navbar.module.css"
 
 const Navbar = () => {
+
+	// let activeStyle = { textDecoration: "underline" }
+
+	let activeClassName = "activeLink"
+
     return (
         <nav className="navBar">
-                <ul>
-                    {navbarLinks.map(item => {
-                        return (
-                        <li key={item.id}>
-                            <NavLink to={item.path} activeClassName="active-link" exact>
-                                {item.text}
-                            </NavLink>
-                        </li>
-                        )
-                    })}
-                </ul>
+			<BrandLogo />
+			<ul>
+				{navbarLinks.map(item => {
+					return (
+					<li key={item.id}>
+						<NavLink to={item.path} className={({ isActive }) => isActive ? activeClassName : undefined }>
+							{item.text}
+						</NavLink>
+					</li>
+					)
+				})}
+			</ul>
         </nav>
     )
 }

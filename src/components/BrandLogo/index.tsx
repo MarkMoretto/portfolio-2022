@@ -22,9 +22,9 @@ interface RectangleElementComponent {
 
 
 interface BrandLogoProps {
-	logoWidth: number
-	logoHeight: number
-	scaleRatio: number
+	logoWidth?: number
+	logoHeight?: number
+	scaleRatio?: number
 	translateCoords?: {
 		X: number
 		y: number
