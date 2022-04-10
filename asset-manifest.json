@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/MarkMoretto/portfolio-2022/static/css/main.073c9b0a.css",
-    "main.js": "/MarkMoretto/portfolio-2022/static/js/main.7b3445de.js",
-    "static/js/401.3e963347.chunk.js": "/MarkMoretto/portfolio-2022/static/js/401.3e963347.chunk.js",
-    "static/media/logo.svg": "/MarkMoretto/portfolio-2022/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/MarkMoretto/portfolio-2022/index.html",
-    "main.073c9b0a.css.map": "/MarkMoretto/portfolio-2022/static/css/main.073c9b0a.css.map",
-    "main.7b3445de.js.map": "/MarkMoretto/portfolio-2022/static/js/main.7b3445de.js.map",
-    "401.3e963347.chunk.js.map": "/MarkMoretto/portfolio-2022/static/js/401.3e963347.chunk.js.map"
+    "main.css": "/portfolio-2022/static/css/main.ec590e26.css",
+    "main.js": "/portfolio-2022/static/js/main.381053f4.js",
+    "static/media/logo.svg": "/portfolio-2022/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/portfolio-2022/index.html",
+    "main.ec590e26.css.map": "/portfolio-2022/static/css/main.ec590e26.css.map",
+    "main.381053f4.js.map": "/portfolio-2022/static/js/main.381053f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.7b3445de.js"
+    "static/css/main.ec590e26.css",
+    "static/js/main.381053f4.js"
   ]
 }
