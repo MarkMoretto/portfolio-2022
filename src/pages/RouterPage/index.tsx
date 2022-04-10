@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 
-import dataPages from "../About/about-data"
+import dataPages from "../About/page-data"
 
 const RouterPage = () => {
 	const { thisPageSlug } = useParams()
