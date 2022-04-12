@@ -9,12 +9,12 @@ interface ILink {
 }
 
 /**
- * @name NavLink
+ * @name NavLinkC
  * @description Main navigation link class
  * @implements {ILink}
  * @extends {ABCLink}
 */
-class NavLink extends ABCLink implements ILink {
+class NavLinkC extends ABCLink implements ILink {
 
 	private _id: number
 	label: string
@@ -45,4 +45,4 @@ class NavLink extends ABCLink implements ILink {
 }
 
 
-export default NavLink
+export default NavLinkC
