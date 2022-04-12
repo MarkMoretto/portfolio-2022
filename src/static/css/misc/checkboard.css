@@ -1,0 +1,31 @@
+/* https://www.reddit.com/r/css/comments/u08pf3/how_to_make_a_checkerboard_using_background/ */
+
+/* https://developer.mozilla.org/en-US/docs/web/css/gradient/conic-gradient */
+
+/*
+https://www.color-hex.com/color-palette/23730 
+https://www.color-hex.com/color-palette/1866
+
+*/
+:root {
+	/* --color-a: #dc57af;
+	--color-b: #a80f75; */
+
+	/* 	--color-a: #fffff2; */
+	--color-a: #ffffff;
+	/*   --color-a: #fdfbfb; */
+	/* 	--color-b: #f9f9f9; */
+	/*   --color-b: #f9f1f1; */
+	--color-b: #fdf9f9;
+	--square-size: 10rem;
+}
+
+.checkerboard {
+	height: 100%;
+	width: 100%;
+	background: conic-gradient(var(--color-a) 90deg,
+			var(--color-b) 90deg 180deg,
+			var(--color-a) 180deg 270deg,
+			var(--color-b) 270deg);
+	background-size: var(--square-size) var(--square-size);
+}
