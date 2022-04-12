@@ -2,23 +2,30 @@ import React, { Fragment } from "react"
 
 import "./Card.module.scss"
 
-interface WrapperProps {
+interface ICardContent {
+	cardTitle: string
+	cardSubtitle?: string
+	readMoreLink?: {
+		url: string
+		label: string		
+	}
+}
+
+
+
+
+
+
+
+
+interface ICardWrapper extends ICardContent {
 	children: React.ReactNode
 }
 
-const Card = ({ children }: WrapperProps) => {
+const Card = ({ children, ...args }: ICardWrapper) => {
 	return (
 		<Fragment>
-			<div
-				style={{
-					backgroundColor: "purple",
-					color: "white",
-					display: "flex",
-					flexDirection: "column",
-					padding: "5rem",
-					fontSize: "3rem"
-				}}
-			>
+			<div className="card light">
 				{children}
 			</div>
 		</Fragment>

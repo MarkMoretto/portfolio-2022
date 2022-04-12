@@ -1,32 +1,28 @@
-@import-normalize;
 
 /* brin
 g in normalize.css styles */
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
 
 
 * {
 	margin: 0;
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}	
 }
 
 html {
 	font-size: 62.5%;
-}
-
-html,
-body {
-	height: 100%;
+	body {
+		height: 100%;
+	}
 }
 
 body {
 	font-size: 1.6rem;
 	line-height: 1.5;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -59,11 +55,10 @@ h6 {
 }
 
 
-#root,
-#__next {
+#root {
 	isolation: isolate;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

@@ -5,6 +5,9 @@ import Navbar from "../Navbar"
 import Footer from "../Footer"
 
 const Layout = () => {
+	
+	document.title = `Mark's Demo App`
+
 	return (
 		<Fragment>
 			<Navbar />

@@ -1,7 +1,8 @@
 
 // import logo from "../../logo.svg"
 // import styles from "./Home.module.css"
-import homeImage from "./pexels-olya-kobruseva-sm.jpg"
+// import homeImage from "./pexels-olya-kobruseva-sm.jpg"
+import homeImage from "../../static/images/animals/puppy-profile-1-1200x800.jpg"
 
 const Home = () => {
     return (
