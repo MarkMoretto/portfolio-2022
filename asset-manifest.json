@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio-2022/static/css/main.3d6b1ccf.css",
-    "main.js": "/portfolio-2022/static/js/main.ead08ece.js",
-    "static/media/pexels-olya-kobruseva-sm.jpg": "/portfolio-2022/static/media/pexels-olya-kobruseva-sm.b09ae2c9552479610120.jpg",
+    "main.css": "/portfolio-2022/static/css/main.b9c124d4.css",
+    "main.js": "/portfolio-2022/static/js/main.4138af2a.js",
     "static/media/boat-water-winter-drazen-nesic.jpeg": "/portfolio-2022/static/media/boat-water-winter-drazen-nesic.822137f3366f74fe249d.jpeg",
+    "static/media/puppy-profile-1-1200x800.jpg": "/portfolio-2022/static/media/puppy-profile-1-1200x800.302be412c1c73bb1c0e4.jpg",
     "index.html": "/portfolio-2022/index.html",
-    "main.3d6b1ccf.css.map": "/portfolio-2022/static/css/main.3d6b1ccf.css.map",
-    "main.ead08ece.js.map": "/portfolio-2022/static/js/main.ead08ece.js.map"
+    "main.b9c124d4.css.map": "/portfolio-2022/static/css/main.b9c124d4.css.map",
+    "main.4138af2a.js.map": "/portfolio-2022/static/js/main.4138af2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d6b1ccf.css",
-    "static/js/main.ead08ece.js"
+    "static/css/main.b9c124d4.css",
+    "static/js/main.4138af2a.js"
   ]
 }
